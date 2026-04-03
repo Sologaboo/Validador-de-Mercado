@@ -1,0 +1,18 @@
+.tip-bet-rule-house
+.reg-bet-rule-house
+.fut-bet-rule-house
+.base-bet-rule-house
+.fut-usa-bet-rule-house
+.Bask-bet-rule-house
+.tenis-bet-rule-house
+.hockey-bet-rule-house
+
+
+
+
+
+Se pueden agregar varias ventas con los distitos mercados, y buscaro or el deporte de preferencia.
+Se puede agregar al buscador la sugerenias mas buscadas del mes
+Como funciona el mercado 0% de margen, no estan agregadas en el validador de apuesta.
+No esta agregada en el validador de apuesta (FUTBOL DEVOLUCIÓN EN EMPATES 0-0)
+No esta agregada en el validador de apuesta (REGLAS DEPORTIVAS Y EXPLICACIÓN DE MERCADOS)

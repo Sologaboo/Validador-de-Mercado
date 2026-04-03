@@ -1,0 +1,143 @@
+/* Definición de variables de color */
+        :root {
+            --bg-color: #f4f7f6;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --border-color: #ddd;
+            --accent-color: #27ae60;
+            --accent-hover: #eeeeee;
+            --wiki-title: #000000;
+
+        }
+
+        /* Colores para Modo Oscuro */
+        .dark-mode {
+            --bg-color: #121212;
+            --container-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --border-color: #333;
+            --wiki-title: #ffffff;
+            --wiki-item:#fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            transition: background 0.3s, color 0.3s;
+            min-height: 100vh;
+        }
+
+        /* Botón de Modo Oscuro */
+        .theme-switch {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+
+        #themeToggle {
+            padding: 8px 15px;
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 { margin-bottom: 30px; }
+
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid var(--border-color);
+            background-color: var(--container-bg);
+            color: var(--text-color);
+            border-radius: 25px;
+            outline: none;
+        }
+
+        button.search-btn {
+            padding: 10px 25px;
+            background-color: var(--accent-color);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button.search-btn:hover { background-color: var(--accent-hover); }
+
+        #results {
+            text-align: left;
+            background: var(--container-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .wiki-item {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+        .wiki-item p {
+            margin: 10px 0;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .wiki-title {
+            font-size: 1.3em;
+            color: var(--wiki-title); /* <--- Esto hace la magia */
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            transition: color 0.3s ease; /* Para que el cambio de color sea suave */
+        }
+        .status {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .tip-bet-rule-house { background-color:}
+        .reg-bet-rule-house { background-color:}
+        .fut-bet-rule-house { background-color:}
+        .base-bet-rule-house { background-color:}
+        .fut-usa-bet-rule-house { background-color:}
+        .Bask-bet-rule-house { background-color:}
+        .tenis-bet-rule-house { background-color:}
+        .hockey-bet-rule-house { background-color:}
+
+        
+        .no-results {
+            padding: 40px;
+            color: var(--text-secondary);
+            text-align: center;
+            }
