@@ -7,7 +7,7 @@
          [
                 { 
                 title: "Apuesta teaser",
-                info:"<p>Una apuesta “teaser” es un tipo de apuesta combinada.  El apostador puede cambiar el margen de puntos de un evento, lo que hace que la apuesta sea más fácil de ganar. A cambio, el apostador obtiene un menor rendimiento de las apuestas en caso de ganar. Si una selección pierde, el “teaser” se considera perdido. Si se anula una selección y se gana el resto, el “teaser” se considera anulado.</p>",
+                info:"",
                 status: "",
                 type:""
                 },             
