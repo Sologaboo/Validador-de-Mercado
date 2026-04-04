@@ -3,59 +3,55 @@
 
  // Base de datos de la WikiApuesta
  
-        const wikiData =
-         [
-                { 
-                title: "Apuesta teaser",
-                info:"",
-                status: "",
-                type:""
-                },             
-
-
-
-        ];
+const wikiData = [
+    { 
+        title: "Apuesta teaser",
+        info: "Una apuesta “teaser” es un tipo de apuesta combinada...",
+        detail: "Ejemplo práctico: En un teaser de 6 puntos en la NFL, si una línea está en -7, puedes moverla a -1 para facilitar la victoria.", // <--- NUEVA PROPIEDAD
+        status: "Estrategia",
+        type: "tip-bet-rule-house"
+    },
+];
 
 function searchWiki() {
     const input = document.getElementById('searchInput').value.toLowerCase();
     const resultsDiv = document.getElementById('results');
-    
     resultsDiv.innerHTML = '';
 
-    // Validación de campo vacío (Tu código original)
     if (input.trim() === "") {
         resultsDiv.innerHTML = '<div class="no-results">Por favor, escribe un mercado o estrategia para buscar.</div>';
         return;
     }
 
-    // 1. Filtramos la base de datos según lo que escribió el usuario
     let filteredResults = wikiData.filter(item => 
         item.title.toLowerCase().includes(input) || 
         item.info.toLowerCase().includes(input)
     );
 
-    // 2. Aplicamos el ORDEN ALFABÉTICO (A-Z) a los resultados encontrados
     filteredResults.sort((a, b) => a.title.localeCompare(b.title));
 
-    // 3. Verificamos si hubo coincidencias y las mostramos
     if (filteredResults.length > 0) {
         filteredResults.forEach(item => {
-            // Creamos el contenedor del ítem
             const div = document.createElement('div');
             div.className = 'wiki-item';
             
-            // Insertamos el contenido (usamos innerHTML para que reconozca los <p> y <strong>)
+            // Estructura con la nueva sección 'wiki-detail'
             div.innerHTML = `
-                <span class="status ${item.type || 'safe'}">${item.status}</span>
-                <a href="#" class="wiki-title">${item.title}</a>
+                <span class="status ${item.type}">${item.status}</span>
+                <a href="javascript:void(0)" class="wiki-title">${item.title}</a>
                 <div class="wiki-content">${item.info}</div>
+                <div class="wiki-detail">${item.detail || "No hay detalles adicionales."}</div>
             `;
+            
+            // EVENTO DE CLIC: Aquí ocurre la "Doble Vista"
+            div.addEventListener('click', () => {
+                div.classList.toggle('active');
+            });
             
             resultsDiv.appendChild(div);
         });
     } else {
-        // Mensaje si no hay coincidencias
-        resultsDiv.innerHTML = '<div class="no-results">No se encontraron datos para "' + input + '".</div>';
+        resultsDiv.innerHTML = `<div class="no-results">No se encontraron datos para "${input}".</div>`;
     }
 }
 
