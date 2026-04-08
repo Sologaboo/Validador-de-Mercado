@@ -45,8 +45,8 @@
     },
 		
     {
-        title:"<p>Apuesta sin empate <b>(DNB)</b></p>",
-        info: "<p></p>",
+        title:"<p>Apuesta sin empate</p><b>(DNB)</b>",
+        info: "<p>Con la Apuesta sin Empate, eliminas el riesgo de las tablas. Eliges un ganador y, si el partido termina en empate, te devolvemos el saldo apostado.</p>",
         detail: "<p>Este mercado de apuestas consiste en lo siguiente, para definir una apuesta como ganadora, tiene que haber un equipo ganador. Lo que significa que, si el partido termina en empate, se reembolsará el dinero apostado. </p><p><b>Por ejemplo</b>,si un resultado final da como resultado un empate, la apuesta se liquidará como cancelada.</p>",
         status: "<p>Fútbol</p>",
         type: "fut-bet-rule-house",
