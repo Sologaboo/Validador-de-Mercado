@@ -15,7 +15,7 @@
     },
  
     {
-        title:"<p>Total (Más /Menos)</p>",
+        title:"<p>Total</p> <b>(Más /Menos)</b>",
         info: "<p>Se debe predecir si el número de goles marcados durante el partido estará por encima o por debajo de la línea estipulada.</p>",
         detail: "<p>En el mercado de Total (Más/Menos), solo tiene que predecir cuántos goles se marcarán en total. Nosotros fijamos una cifra (línea) y usted elige si el resultado final será Más (por encima) o Menos (por debajo) de ese número. ¡No importa quién gane, solo los goles!</p>",
         status: "<p>Fútbol</p>",
@@ -31,13 +31,56 @@
     },
 		
     {
-        title:"<p>Ambos equipos anotan (GG/NG)</p>",
+        title:"<p>Ambos equipos anotan <b>(GG/NG)</b></p>",
         info: "<p>En este mercado hay dos posibles resultados: GG(ambos equipos marcan al menos un gol cada uno durante todo el partido), NG (uno o ambos no marcan ningún gol durante todo el partido).</p>",
         detail: "<p>En el mercado GG/NG no importa quién gane el partido, solo si hay goles de ambos bandos. GG significa que ambos marcan; NG significa que alguno se queda sin anotar. ¡Así de simple es ganar!</p>",
-        status: "<p></p>",
+        status: "<p>Fútbol</p>",
         type: "fut-bet-rule-house",
     },
 		
+    {
+        title:"<p>Apuesta sin empate <b>(DNB)</b></p>",
+        info: "<p></p>",
+        detail: "<p>Este mercado de apuestas consiste en lo siguiente, para definir una apuesta como ganadora, tiene que haber un equipo ganador. Lo que significa que, si el partido termina en empate, se reembolsará el dinero apostado. </p><p><b>Por ejemplo</b>,si un resultado final da como resultado un empate, la apuesta se liquidará como cancelada.</p>",
+        status: "<p>Fútbol</p>",
+        type: "fut-bet-rule-house",
+    },
+			
+    {
+        title:"<p></p>",
+        info: "<p></p>",
+        detail: "<p></p>",
+        status: "<p></p>",
+        type: "fut-bet-rule-house",
+    },
+			
+    {
+        title:"<p></p>",
+        info: "<p></p>",
+        detail: "<p></p>",
+        status: "<p></p>",
+        type: "fut-bet-rule-house",
+    },
+
+			
+    {
+        title:"<p></p>",
+        info: "<p></p>",
+        detail: "<p></p>",
+        status: "<p></p>",
+        type: "fut-bet-rule-house",
+    },
+
+			
+    {
+        title:"<p></p>",
+        info: "<p></p>",
+        detail: "<p></p>",
+        status: "<p></p>",
+        type: "fut-bet-rule-house",
+    },
+
+			
     {
         title:"<p></p>",
         info: "<p></p>",
