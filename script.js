@@ -5,7 +5,7 @@
  
 const wikiData = [
     { 
-        title: "Apuesta teaserAAA",
+        title: "Apuesta teaser",
         info: "Una apuesta “teaser” es un tipo de apuesta combinada...",
         detail: "Ejemplo práctico: En un teaser de 6 puntos en la NFL, si una línea está en -7, puedes moverla a -1 para facilitar la victoria.", // <--- NUEVA PROPIEDAD
         status: "Estrategia",
