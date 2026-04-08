@@ -3,8 +3,7 @@
 
  // Base de datos de la WikiApuesta
  
-        const wikiData =
-         [
+        const wikiData =  [
     { 
         title: "1X2",
         info: "<p>Se debe predecir el resultado del partido. Hay 3 resultados posibles: 1(el equipo local gana), X (los equipos empatan), 2 (el equipo visitante gana).</p>",
