@@ -5,7 +5,6 @@
  
         const wikiData =
          [
-                { 
     { 
         title: "1X2",
         info: "<p>Se debe predecir el resultado del partido. Hay 3 resultados posibles: 1(el equipo local gana), X (los equipos empatan), 2 (el equipo visitante gana).</p>",
@@ -52,8 +51,7 @@
         detail: "<p>Este mercado de apuestas consiste en lo siguiente, para definir una apuesta como ganadora, tiene que haber un equipo ganador. Lo que significa que, si el partido termina en empate, se reembolsará el dinero apostado. </p><p><b>Por ejemplo</b>,si un resultado final da como resultado un empate, la apuesta se liquidará como cancelada.</p>",
         status: "<p>Fútbol</p>",
         type: "fut-bet-rule-house",
-    },
-                },             
+    },            
 
 
 
